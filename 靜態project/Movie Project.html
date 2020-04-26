@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Favorite Movies</title>
+    <link rel="stylesheet" href="assets3/styles/app.css" />
+    <script src="assets3/scripts/app.js" defer></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/fantasy-master/css/bootstrap.css" />
+    <link rel="stylesheet" href="/fantasy-master/vendors/linericon/style.css" />
+    <link rel="stylesheet" href="/fantasy-master/css/font-awesome.min.css" />
+
+    <!-- main css -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="./fantasy-master/css/responsive.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--================Header Menu Area =================-->
+    <header class="header_area">
+      <div class="main_menu">
+        <nav class="navbar navbar-expand-lg bg-info">
+          <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <a class="navbar-brand logo_h" href="/fantasy-master/index.html">
+              <img src="" alt="" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div
+              class="collapse navbar-collapse offset"
+              id="navbarSupportedContent"
+            >
+              <ul
+                class="nav navbar-nav menu_nav justify-content-center mx-auto"
+              >
+                <li class="nav-item">
+                  <button style="background-color: yellow;">
+                    <a class="nav-link" href="./fantasy-master/index.html"
+                      >Home</a
+                    >
+                  </button>
+                </li>
+                <li class="nav-item dropdown active">
+                  <a
+                    href="#"
+                    class="nav-link dropdown-toggle"
+                    data-toggle="dropdown"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >JS DEMO</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li class="nav-item">
+                      <button style="background-color: skyblue;">
+                        <a class="nav-link" href="/Calculator.html"
+                          >Unconventional Calculator</a
+                        >
+                      </button>
+                    </li>
+                    <li class="nav-item">
+                      <button style="background-color: skyblue;">
+                        <a class="nav-link" href="/Monster Killer.html"
+                          >Monster Killer</a
+                        >
+                      </button>
+                    </li>
+                    <li class="nav-item">
+                      <button style="background-color: skyblue;">
+                        <a class="nav-link" href="/Movie Project.html"
+                          >DOM Movie Project</a
+                        >
+                      </button>
+                    </li>
+                    <li class="nav-item">
+                      <button style="background-color: skyblue;">
+                        <a class="nav-link" href="/Music Player.html">
+                          Music Player
+                        </a>
+                      </button>
+                    </li>
+                    <li class="nav-item">
+                      <button style="background-color: skyblue;">
+                        <a class="nav-link" href="/Video Player.html"
+                          >Video Player</a
+                        >
+                      </button>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <button style="background-color: skyblue;">
+                    <a class="nav-link" href="/JS Summary.html"> JS Summary</a>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <br />
+    <div id="backdrop"></div>
+    <div class="modal" id="add-modal">
+      <div class="modal__content">
+        <label for="title">Movie Title</label>
+        <input type="text" name="title" id="title" />
+        <label for="image-url">Image URL</label>
+        <input type="text" name="image-url" id="image-url" />
+        <label for="rating">Your Rating</label>
+        <input
+          type="number"
+          step="1"
+          max="5"
+          min="1"
+          name="rating"
+          id="rating"
+        />
+      </div>
+      <div class="modal__actions">
+        <button class="btn btn--passive">Cancel</button>
+        <button class="btn btn--success">Add</button>
+      </div>
+    </div>
+    <div class="modal" id="delete-modal">
+      <h2 class="modal__title">Are you sure?</h2>
+      <p class="modal__content">
+        Are you sure you want to delete this item? This action can't be made
+        undone!
+      </p>
+      <div class="modal__actions">
+        <button class="btn btn--passive">No (Cancel)</button>
+        <button class="btn btn--danger">Yes</button>
+      </div>
+    </div>
+
+    <header>
+      <h1>Favorite Movies</h1>
+      <button>ADD MOVIE</button>
+    </header>
+
+    <main>
+      <p id="entry-text">Your personal movie database!</p>
+      <ul id="movie-list">
+        <li class="movie-element"></li>
+      </ul>
+    </main>
+    <script src="assets3/scripts/vendor.js"></script>
+    <script src="assets3/scripts/app.js"></script>
+    <script src="/fantasy-master/js/jquery-3.2.1.min.js"></script>
+    <script src="/fantasy-master/js/popper.js"></script>
+    <script src="/fantasy-master/js/bootstrap.min.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+  </body>
+</html>
